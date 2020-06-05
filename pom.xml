@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.webcode.springboot</groupId>
+	<artifactId>microservice-spring-boot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>SpringBoot_MyBatis</module>
+		<module>Spring-boot_Shiro</module>
+		<module>Spring-boot-ajaxs</module>
+		<module>Spring-boot-first-app</module>
+		<module>Spring-boot-first-app-multi-module</module>
+		<module>spring-boot-JSP-email</module>
+		<module>spring-boot-quartz</module>
+		<module>spring-boot-scheduled</module>
+		<module>Spring-boot-Security</module>
+		<module>spring-boot-smtp</module>
+		<module>spring-boot-shiro</module>
+		<module>spring-boot-swaggerui</module>
+		<module>spring-boot-timer</module>
+		<module>spring-boot-xml</module>
+	</modules>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+	<!-- 继承SpringBoot官方指定的父工程 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.8.RELEASE</version>
+	</parent>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Camden.SR2</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

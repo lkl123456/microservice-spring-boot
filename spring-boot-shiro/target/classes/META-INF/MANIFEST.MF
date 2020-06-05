@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-boot-shiro
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: liukunlin
+Implementation-Vendor-Id: com.neo
+Build-Jdk: 1.8.0_241
+Implementation-URL: http://projects.spring.io/spring-boot/microservice
+ -spring-boot/spring-boot-shiro/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
